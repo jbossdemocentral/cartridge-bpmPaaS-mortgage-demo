@@ -8,9 +8,13 @@ For more information on the [Mortgage Demo see here] (https://github.com/eschabe
 
 JBoss BPM Suite logins: 
 
-   * u:erics  p: bpmsuite  (admin)
+   * u: erics  p: bpmsuite  (admin)
 
-   * u: alan  p: bpmsuite  (analyst)
+   * u: alan  p: bpmsuite  (appraiser)
+
+   * u: mary p: bpmsuite (manager)
+
+   * u: bob p: bpmsuite (broker)
 
 
 Important Note
