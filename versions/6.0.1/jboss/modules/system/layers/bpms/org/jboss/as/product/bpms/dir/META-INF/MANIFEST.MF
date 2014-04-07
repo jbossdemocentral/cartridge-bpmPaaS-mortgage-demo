@@ -1,0 +1,3 @@
+JBoss-Product-Release-Name: BPM Suite
+JBoss-Product-Release-Version: 6.0.1.GA
+JBoss-Product-Console-Slot: eap

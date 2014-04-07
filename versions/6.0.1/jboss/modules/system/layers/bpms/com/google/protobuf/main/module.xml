@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="com.google.protobuf">
+  <resources>
+
+<resource-root path="protobuf-java-2.5.0.jar"/>
+
+  </resources>
+  <dependencies>
+
+<module name="org.jbpm" export="false"/>
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

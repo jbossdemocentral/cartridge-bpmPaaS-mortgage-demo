@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="com.opensymphony.quartz">
+  <resources>
+
+<resource-root path="quartz-1.8.5.jar"/>
+
+  </resources>
+  <dependencies>
+
+<module name="javax.mail.api" export="false"/>
+<module name="javax.jms.api" export="false"/>
+<module name="javax.activation.api" export="false"/>
+<module name="org.jboss.as.osgi.jta" export="false"/>
+<module name="org.slf4j" export="false"/>
+<module name="javax.servlet.api" export="false"/>
+<module name="org.jbpm" export="false"/>
+<module name="org.drools" export="false"/>
+<module name="org.kie" export="false"/>
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

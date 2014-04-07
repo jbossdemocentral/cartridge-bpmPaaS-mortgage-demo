@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="org.apache.camel">
+  <resources>
+
+<resource-root path="camel-josql-2.10.0.redhat-60061.jar"/>
+<resource-root path="camel-core-2.10.0.redhat-60061.jar"/>
+
+  </resources>
+  <dependencies>
+
+<module name="com.sun.xml.bind" export="false"/>
+<module name="org.kie.lib" export="false"/>
+<module name="org.slf4j" export="false"/>
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

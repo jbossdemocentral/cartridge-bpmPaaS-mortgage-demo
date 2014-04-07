@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="org.drools">
+  <resources>
+
+<resource-root path="drools-templates-6.0.2-redhat-5.jar"/>
+<resource-root path="drools-decisiontables-6.0.2-redhat-5.jar"/>
+<resource-root path="drools-scorecards-6.0.2-redhat-5.jar"/>
+<resource-root path="drools-core-6.0.2-redhat-5.jar"/>
+<resource-root path="drools-persistence-jpa-6.0.2-redhat-5.jar"/>
+<resource-root path="drools-compiler-6.0.2-redhat-5.jar"/>
+<resource-root path="drools-workbench-models-guided-dtable-6.0.2-redhat-5.jar"/>
+<resource-root path="drools-workbench-models-datamodel-api-6.0.2-redhat-5.jar"/>
+<resource-root path="drools-workbench-models-commons-6.0.2-redhat-5.jar"/>
+<resource-root path="drools-workbench-models-guided-template-6.0.2-redhat-5.jar"/>
+<resource-root path="drools-workbench-models-test-scenarios-6.0.2-redhat-5.jar"/>
+<resource-root path="drools-workbench-models-guided-scorecard-6.0.2-redhat-5.jar"/>
+
+  </resources>
+  <dependencies>
+
+<module name="com.google.protobuf" export="false"/>
+<module name="com.sun.xml.bind" export="false"/>
+<module name="javax.activation.api" export="false"/>
+<module name="javax.enterprise.api" export="false"/>
+<module name="javax.inject.api" export="true"/>
+<module name="javax.persistence.api" export="false"/>
+<module name="javax.transaction.api" export="false"/>
+<module name="javax.xml.bind.api" export="false"/>
+<module name="org.antlr" export="false"/>
+<module name="org.apache.poi" export="false"/>
+<module name="org.codehaus.woodstox" export="false"/>
+<module name="org.dom4j" export="false"/>
+<module name="org.hibernate" export="false"/>
+<module name="org.javassist" export="false"/>
+<module name="org.jboss.as.osgi.jta" export="false"/>
+<module name="org.jboss.as.web" export="false"/>
+<module name="org.jboss.vfs" export="false"/>
+<module name="org.jbpm" export="false"/>
+<module name="org.junit" export="false"/>
+<module name="org.kie" export="false"/>
+<module name="org.kie.lib" export="false"/>
+<module name="org.mvel" export="false"/>
+<module name="org.osgi.core" export="false"/>
+<module name="org.slf4j" export="false"/>
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

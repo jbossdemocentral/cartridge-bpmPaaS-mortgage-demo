@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="org.apache.xmlbeans">
+  <resources>
+
+<resource-root path="xmlbeans-2.4.0-redhat-2.jar"/>
+
+  </resources>
+  <dependencies>
+
+<module name="org.codehaus.woodstox" export="false"/>
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

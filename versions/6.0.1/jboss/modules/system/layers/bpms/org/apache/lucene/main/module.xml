@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="org.apache.lucene">
+  <resources>
+
+<resource-root path="lucene-queries-4.0.0.jar"/>
+<resource-root path="lucene-sandbox-4.0.0.jar"/>
+<resource-root path="lucene-queryparser-4.0.0.jar"/>
+<resource-root path="lucene-analyzers-common-4.0.0.jar"/>
+<resource-root path="lucene-codecs-4.0.0.jar"/>
+<resource-root path="lucene-core-4.0.0.jar"/>
+
+  </resources>
+  <dependencies>
+
+<module name="org.kie.lib" export="false"/>
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

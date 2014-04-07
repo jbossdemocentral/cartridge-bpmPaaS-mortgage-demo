@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="org.apache.ant">
+  <resources>
+
+<resource-root path="ant-1.8.3.jar"/>
+<resource-root path="ant-launcher-1.8.3.jar"/>
+
+  </resources>
+  <dependencies>
+
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

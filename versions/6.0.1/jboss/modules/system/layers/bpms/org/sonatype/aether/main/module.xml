@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="org.sonatype.aether">
+  <resources>
+
+<resource-root path="aether-impl-1.13.1.jar"/>
+<resource-root path="aether-connector-file-1.13.1.jar"/>
+<resource-root path="aether-util-1.13.1.jar"/>
+<resource-root path="aether-connector-wagon-1.13.1.jar"/>
+<resource-root path="aether-spi-1.13.1.jar"/>
+<resource-root path="aether-api-1.13.1.jar"/>
+
+  </resources>
+  <dependencies>
+
+<module name="org.apache.maven.wagon" export="false"/>
+<module name="org.codehouse.plexus" export="false"/>
+<module name="org.sonatype.sisu" export="false"/>
+<module name="org.slf4j" export="false"/>
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

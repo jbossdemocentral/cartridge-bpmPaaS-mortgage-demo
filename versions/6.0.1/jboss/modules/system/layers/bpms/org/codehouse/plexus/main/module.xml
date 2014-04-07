@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="org.codehouse.plexus">
+  <resources>
+
+<resource-root path="plexus-utils-3.0.9.jar"/>
+<resource-root path="plexus-classworlds-2.4.jar"/>
+<resource-root path="plexus-component-annotations-1.5.5.jar"/>
+<resource-root path="plexus-interpolation-1.14.jar"/>
+
+  </resources>
+  <dependencies>
+
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

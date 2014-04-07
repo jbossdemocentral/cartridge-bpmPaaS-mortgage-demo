@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="org.eclipse.jgit">
+  <resources>
+
+<resource-root path="org.eclipse.jgit-2.1.0.201209190230-r.jar"/>
+
+  </resources>
+  <dependencies>
+
+<module name="org.kie.lib" export="false"/>
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

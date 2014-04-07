@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="org.apache.commons.compress">
+  <resources>
+
+<resource-root path="commons-compress-1.4.1.jar"/>
+
+  </resources>
+  <dependencies>
+
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

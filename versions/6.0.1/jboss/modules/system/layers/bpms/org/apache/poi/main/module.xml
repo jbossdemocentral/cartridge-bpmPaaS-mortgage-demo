@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="org.apache.poi">
+  <resources>
+
+<resource-root path="poi-ooxml-3.9.jar"/>
+<resource-root path="poi-3.9.jar"/>
+<resource-root path="poi-ooxml-schemas-3.9.jar"/>
+
+  </resources>
+  <dependencies>
+
+<module name="org.apache.commons.codec" export="false"/>
+<module name="org.apache.xmlbeans" export="false"/>
+<module name="org.dom4j" export="false"/>
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

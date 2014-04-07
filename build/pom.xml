@@ -1,0 +1,139 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <groupId>org.jboss</groupId>
+  <artifactId>openshift-cartridge-bpms</artifactId>
+  <version>6.0.1</version>
+  <packaging>pom</packaging>
+  <modelVersion>4.0.0</modelVersion>
+  <name>Red Hat JBoss BPM Suite Cartridge</name>
+  <description>RedHat JBoss BPM Suite cartridge for OpenShift</description>
+  <properties>
+    <bpms-archive-url>http://dev138.mw.lab.eng.bos.redhat.com</bpms-archive-url>
+    <bpms-archive-name>jboss-bpms-6.0.1.GA-redhat-3-deployable-eap6.x.zip</bpms-archive-name>    
+    <bpms-archive-path>candidate/bpms-6.0.1.CR1/${bpms-archive-name}</bpms-archive-path>
+    <bpms-version-target>6.0.1</bpms-version-target>
+  </properties>
+  <scm>
+    <connection>scm:git:git://github.com:pzapataf/openshift-cartridge-bpms.git</connection>
+    <developerConnection>scm:git:git@github.com:pzapataf/openshift-cartridge-bpms.git</developerConnection>
+    <url>https://github.com/pzapataf/openshift-cartridge-bpms</url>
+    <tag>HEAD</tag>
+  </scm>
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License</name>
+      <url>http://www.gnu.org/licenses/lgpl.html</url>
+      <distribution>repo</distribution>
+      <comments>A business-friendly OSS license</comments>
+    </license>
+  </licenses>
+  <url>${site.url}</url>
+  <developers>
+    <developer>
+      <name>Pedro Zapata</name>
+      <id>pzapataf</id>
+      <email>pzapataf@redhat.com</email>
+      <organization>Red Hat</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+  </developers>
+
+  <build>
+    <plugins>
+	<plugin>
+	  <artifactId>maven-clean-plugin</artifactId>
+	  <version>2.5</version>
+	  <!-- Removes jboss folder contents from specified version folder -->
+	  <configuration>
+	    <filesets>
+              <fileset>
+	      <directory>../versions/${bpms-version-target}</directory>
+	      <includes>
+	        <include>jboss/**</include>
+	      </includes>
+	      <followSymlinks>false</followSymlinks>
+            </fileset>
+	    </filesets>
+	  </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>wagon-maven-plugin</artifactId>
+        <version>1.0-beta-3</version>
+        <executions>
+	    <!--Downloads the DV archive into the build target folder -->
+            <execution>
+                <id>download-bpms-zip</id>
+                <phase>initialize</phase>
+                <goals>
+                    <goal>download-single</goal>
+                </goals>
+                <configuration>
+                    <url>${bpms-archive-url}</url>
+                    <fromFile>${bpms-archive-path}</fromFile>
+                    <toDir>${project.build.directory}</toDir>
+                </configuration>
+            </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>truezip-maven-plugin</artifactId>
+        <version>1.1</version>
+        <executions>
+  	  <!--Extracts the modules from zip and puts them in target version jboss location -->
+          <execution>
+            <id>copy-from-zip</id>
+            <goals>
+              <goal>copy</goal>
+            </goals>
+            <phase>process-resources</phase>
+            <configuration>
+              <fileset>
+                <directory>${project.build.directory}/${bpms-archive-name}/jboss-eap-6.1</directory>
+                <includes>
+                  <include>modules/system/layers/**</include>
+                  <!--<include>jboss-modules.jar</include>-->
+                </includes>
+                <outputDirectory>${project.build.directory}/../../versions/${bpms-version-target}/jboss/</outputDirectory>
+              </fileset>
+            </configuration> 
+          </execution>
+  	  <!--Copies remaining modules (mysql and postgres drivers) from modules folder into target version jboss modules -->
+          <execution>
+            <id>copy-modules</id>
+            <goals>
+              <goal>copy</goal>
+            </goals>
+            <phase>process-resources</phase>
+            <configuration>
+              <fileset>
+                <directory>${project.build.directory}/../modules</directory>
+                <includes>
+                  <include>**</include>
+                </includes>
+                <outputDirectory>${project.build.directory}/../../versions/${bpms-version-target}/jboss/modules/system/layers/base</outputDirectory>
+              </fileset>
+              <fileset>
+                <directory>${project.build.directory}/../modules</directory>
+                <includes>
+                  <include>layers.conf</include>
+                </includes>
+                <outputDirectory>${project.build.directory}/../../versions/${bpms-version-target}/jboss/modules</outputDirectory>
+              </fileset>
+            </configuration> 
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
+
+

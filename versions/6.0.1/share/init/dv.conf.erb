@@ -1,0 +1,21 @@
+description "This is an upstart job file for BPMS"
+
+pre-start script
+bash << "EOF"
+  mkdir -p /var/log/bpms
+  chown -R bpms /var/log/bpms
+EOF
+end script
+
+start on started network-services
+stop on stopped network-services
+respawn
+
+limit nofile 4096 4096
+
+script
+bash << "EOF"
+  su - bpms
+  /opt/bpms/jboss/bin/standalone.sh <%= server_opts %> >> /var/log/bpms/bpms.log 2>&1
+EOF
+end script

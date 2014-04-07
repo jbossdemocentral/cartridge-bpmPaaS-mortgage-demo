@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="org.sonatype.sisu">
+  <resources>
+
+<resource-root path="sisu-inject-bean-2.2.3.jar"/>
+<resource-root path="sisu-inject-plexus-2.2.3.jar"/>
+<resource-root path="sisu-guice-3.0.3-no_aop.jar"/>
+
+  </resources>
+  <dependencies>
+
+<module name="javax.inject.api" export="false"/>
+<module name="org.codehouse.plexus" export="false"/>
+<module name="org.junit" export="false"/>
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

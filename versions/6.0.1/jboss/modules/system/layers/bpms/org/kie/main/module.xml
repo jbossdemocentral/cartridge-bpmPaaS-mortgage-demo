@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="org.kie">
+  <resources>
+
+<resource-root path="kie-internal-6.0.2-redhat-5.jar"/>
+<resource-root path="kie-api-6.0.2-redhat-5.jar"/>
+<resource-root path="kie-ci-6.0.2-redhat-5.jar"/>
+
+  </resources>
+  <dependencies>
+
+<module name="com.opensymphony.quartz" export="false"/>
+<module name="com.sun.xml.bind" export="false"/>
+<module name="javax.activation.api" export="false"/>
+<module name="javax.enterprise.api" export="false"/>
+<module name="javax.inject.api" export="false"/>
+<module name="javax.jms.api" export="false"/>
+<module name="javax.xml.bind.api" export="false"/>
+<module name="org.apache.ant" export="false"/>
+<module name="org.apache.httpcomponents" export="false"/>
+<module name="org.apache.maven" export="false"/>
+<module name="org.apache.maven.wagon" export="false"/>
+<module name="org.codehaus.woodstox" export="false"/>
+<module name="org.codehouse.plexus" export="false"/>
+<module name="org.drools" export="false"/>
+<module name="org.jbpm" export="false"/>
+<module name="org.kie.lib" export="false"/>
+<module name="org.osgi.core" export="false"/>
+<module name="org.slf4j" export="false"/>
+<module name="org.sonatype.aether" export="false"/>
+<module name="org.sonatype.plexus" export="false"/>
+<module name="org.sonatype.sisu" export="false"/>
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

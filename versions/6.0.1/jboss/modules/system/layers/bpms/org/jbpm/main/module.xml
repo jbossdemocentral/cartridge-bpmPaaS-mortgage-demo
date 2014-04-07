@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="org.jbpm">
+  <resources>
+
+<resource-root path="jbpm-executor-6.0.2-redhat-5.jar"/>
+<resource-root path="jbpm-persistence-jpa-6.0.2-redhat-5.jar"/>
+<resource-root path="jbpm-human-task-core-6.0.2-redhat-5.jar"/>
+<resource-root path="jbpm-bpmn2-emfextmodel-6.0.2-redhat-5.jar"/>
+<resource-root path="jbpm-workitems-6.0.2-redhat-5.jar"/>
+<resource-root path="jbpm-human-task-workitems-6.0.2-redhat-5.jar"/>
+<resource-root path="jbpm-kie-services-6.0.2-redhat-5.jar"/>
+<resource-root path="jbpm-bpmn2-6.0.2-redhat-5.jar"/>
+<resource-root path="jbpm-flow-builder-6.0.2-redhat-5.jar"/>
+<resource-root path="jbpm-runtime-manager-6.0.2-redhat-5.jar"/>
+<resource-root path="jbpm-audit-6.0.2-redhat-5.jar"/>
+<resource-root path="jbpm-shared-services-6.0.2-redhat-5.jar"/>
+<resource-root path="jbpm-flow-6.0.2-redhat-5.jar"/>
+<resource-root path="jbpm-human-task-audit-6.0.2-redhat-5.jar"/>
+<resource-root path="META-INF"/>
+
+  </resources>
+  <dependencies>
+
+<module name="com.google.protobuf" export="false"/>
+<module name="com.opensymphony.quartz" export="false"/>
+<module name="com.sun.xml.bind" export="false"/>
+<module name="javaee.api" export="false"/>
+<module name="javax.activation.api" export="false"/>
+<module name="javax.annotation.api" export="false"/>
+<module name="javax.el.api" export="false"/>
+<module name="javax.enterprise.api" export="false"/>
+<module name="javax.inject.api" export="false"/>
+<module name="javax.jms.api" export="false"/>
+<module name="javax.mail.api" export="false"/>
+<module name="javax.persistence.api" export="false"/>
+<module name="javax.security.jacc.api" export="false"/>
+<module name="javax.wsdl4j.api" export="false"/>
+<module name="org.apache.commons.codec" export="false"/>
+<module name="org.apache.commons.collections" export="false"/>
+<module name="org.apache.commons.compress" export="false"/>
+<module name="org.apache.commons.exec" export="false"/>
+<module name="org.apache.commons.httpclient" export="false"/>
+<module name="org.apache.commons.io" export="false"/>
+<module name="org.apache.commons.lang" export="false"/>
+<module name="org.apache.commons.net" export="false"/>
+<module name="org.apache.cxf.impl" export="false"/>
+<module name="org.apache.lucene" export="false"/>
+<module name="org.apache.neethi" export="false"/>
+<module name="org.apache.ws.xmlschema" export="false"/>
+<module name="org.dom4j" export="false"/>
+<module name="org.drools" export="false"/>
+<module name="org.hibernate" export="false"/>
+<module name="org.javassist" export="false"/>
+<module name="org.jboss.as.osgi.jta" export="false"/>
+<module name="org.jboss.solder" export="false"/>
+<module name="org.jboss.weld.core" export="false"/>
+<module name="org.jdom" export="false"/>
+<module name="org.joda.time" export="false"/>
+<module name="org.kie" export="false"/>
+<module name="org.kie.lib" export="false"/>
+<module name="org.mvel" export="false"/>
+<module name="org.osgi.core" export="false"/>
+<module name="org.slf4j" export="false"/>
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>

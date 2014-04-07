@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="org.apache.maven.wagon">
+  <resources>
+
+<resource-root path="wagon-provider-api-1.0-beta-7.jar"/>
+<resource-root path="wagon-http-2.0.jar"/>
+<resource-root path="wagon-http-shared4-2.0.jar"/>
+
+  </resources>
+  <dependencies>
+
+<module name="org.apache.httpcomponents" export="false"/>
+<module name="org.apache.commons.io" export="false"/>
+<module name="org.apache.commons.logging" export="false"/>
+<module name="org.codehouse.plexus" export="false"/>
+<module name="sun.jdk" export="false"/>
+
+<module name="javax.api" export="false"/>
+  </dependencies>
+</module>
