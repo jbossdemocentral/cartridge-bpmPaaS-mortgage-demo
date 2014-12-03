@@ -8,7 +8,7 @@ License-Url: http://www.gnu.org/copyleft/lesser.txt
 Vendor: Red Hat
 Cartridge-Version: 0.0.1
 Cartridge-Vendor: jboss
-Source-Url: https://github.com/eschabell/cartridge-bpmPaaS-mortgage-demo.git
+Source-Url: https://github.com/jbossdemocentral/cartridge-bpmPaaS-mortgage-demo.git
 Categories:
 - service
 - web_framework

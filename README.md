@@ -4,7 +4,7 @@ Summary
 -------
 This cartridge provides the **_Red Hat JBoss BPM Suite_** for easy deployment to OpenShift based bpmPaaS with pre-loaded Mortgage Demo.
 
-For more information on the [Mortgage Demo see here] (https://github.com/eschabell/bpms-mortgage-demo).
+For more information on the [Mortgage Demo see here] (https://github.com/jbossdemocentral/bpms-mortgage-demo).
 
 JBoss BPM Suite logins: 
 
@@ -27,11 +27,11 @@ Deployment
 
 To try out JBoss BPM Suite on OpenShift please follow the instructions:
 
-If you want to use the [OpenShift create application page](https://openshift.redhat.com/app/console/application_types), enter the cartridge URI of **https://raw.githubusercontent.com/eschabell/cartridge-bpmPaaS-mortgage-demo/master/metadata/manifest.yml** in the entry field (at the bottom left of the form).
+If you want to use the [OpenShift create application page](https://openshift.redhat.com/app/console/application_types), enter the cartridge URI of **https://raw.githubusercontent.com/jbossdemocentral/cartridge-bpmPaaS-mortgage-demo/master/metadata/manifest.yml** in the entry field (at the bottom left of the form).
 
 Or if you want to use the [rhc command line](https://www.openshift.com/developers/rhc-client-tools-install) type:
 
-    rhc app create -g medium <APP NAME> https://raw.githubusercontent.com/eschabell/cartridge-bpmPaaS-mortgage-demo/master/metadata/manifest.yml
+    rhc app create -g medium <APP NAME> https://raw.githubusercontent.com/jbossdemocentral/cartridge-bpmPaaS-mortgage-demo/master/metadata/manifest.yml
 
 This will output the generated users and passwords for Business Central.
 
