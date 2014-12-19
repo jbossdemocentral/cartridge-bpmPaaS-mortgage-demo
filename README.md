@@ -1,34 +1,34 @@
 ## Cartridge for bpmPaaS with Mortgage Demo
 
-Summary
--------
 This cartridge provides the **_Red Hat JBoss BPM Suite_** for easy deployment to OpenShift based bpmPaaS with pre-loaded Mortgage Demo.
 
-For more information on the [Mortgage Demo see here] (https://github.com/jbossdemocentral/bpms-mortgage-demo).
 
-JBoss BPM Suite logins: 
+Install with one click in xPaaS (bpmPaaS)
+-----------------------------------------
+After clicking button, ensure `Gear` size is set to `medium`:
 
-   * u: erics  p: bpmsuite  (admin)
+[![Click to install OpenShift](http://launch-shifter.rhcloud.com/launch/light/Install bpmPaaS.svg)](https://openshift.redhat.com/app/console/application_type/custom?&cartridges[]=https://raw.githubusercontent.com/jbossdemocentral/cartridge-bpmPaaS-mortgage-demo/master/metadata/manifest.yml&name=bpmpaasmortgage&gear_profile=medium&initial_git_url=)
 
-   * u: alan  p: bpmsuite  (appraiser)
+Once installed you can use the JBoss BPM Suite logins: 
 
-   * u: mary p: bpmsuite (manager)
+   * u:erics   p: bpmsuite  (admin)
 
-   * u: bob p: bpmsuite (broker)
+   * u: alan   p: bpmsuite  (analyst)
+
+   * u: daniel p: bpmsuite (developer)
+
+   * u: ursla  p: bpmsuite (user)
+
+   * u: mary   p: bpmsuite (manager)
 
 
 Important Note
 --------------
-You need the ability to setup MEDIUM gears, which is freely available if you [upgrade your account to Bronze here] (https://www.openshift.com/products/pricing). 
+You need the ability to setup MEDIUM gears, which is freely available if you [upgrade your account to Bronze here](https://www.openshift.com/products/pricing). 
 
 
-Deployment
-----------
-
-To try out JBoss BPM Suite on OpenShift please follow the instructions:
-
-If you want to use the [OpenShift create application page](https://openshift.redhat.com/app/console/application_types), enter the cartridge URI of **https://raw.githubusercontent.com/jbossdemocentral/cartridge-bpmPaaS-mortgage-demo/master/metadata/manifest.yml** in the entry field (at the bottom left of the form).
-
+Manual setup on OpenShift
+-------------------------
 Or if you want to use the [rhc command line](https://www.openshift.com/developers/rhc-client-tools-install) type:
 
     rhc app create -g medium <APP NAME> https://raw.githubusercontent.com/jbossdemocentral/cartridge-bpmPaaS-mortgage-demo/master/metadata/manifest.yml
@@ -36,4 +36,12 @@ Or if you want to use the [rhc command line](https://www.openshift.com/developer
 This will output the generated users and passwords for Business Central.
 
 You can use them to login into Business Central or BAM applications.
+
+
+Released versions
+-----------------
+
+See the tagged releases for the following versions of the product:
+
+- v1.0 - moved to JBoss Demo Central, added one click install button.
 
