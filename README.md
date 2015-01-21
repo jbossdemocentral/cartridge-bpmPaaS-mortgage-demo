@@ -1,5 +1,5 @@
-## Cartridge for bpmPaaS with Mortgage Demo
-
+Cartridge for bpmPaaS with Mortgage Demo
+========================================
 This cartridge provides the **_Red Hat JBoss BPM Suite_** for easy deployment to OpenShift based bpmPaaS with pre-loaded Mortgage Demo.
 
 
@@ -38,9 +38,13 @@ This will output the generated users and passwords for Business Central.
 You can use them to login into Business Central or BAM applications.
 
 
+Supporting articles
+-------------------
+[Rocket into the Clouds with OpenShift bpmPaaS Quickstarts](http://www.schabell.org/2014/10/red-hat-openshift-bpmpaas-automated-demo-projects-updated.html)
+
+
 Released versions
 -----------------
-
 See the tagged releases for the following versions of the product:
 
 - v1.0 - moved to JBoss Demo Central, added one click install button.
